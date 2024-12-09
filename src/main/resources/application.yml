@@ -1,0 +1,20 @@
+spring:
+  datasource:
+    #BANCO 1
+    escola:
+      url: jdbc:mysql://localhost:3306/escola_db
+      username: root
+      password: admin
+      driver-class-name: com.mysql.cj.jdbc.Driver
+
+    #BANCO 2
+    academia:
+      url: jdbc:mysql://localhost:3306/academia_db
+      username: root
+      password: admin
+      driver-class-name: com.mysql.cj.jdbc.Driver
+
+    jpa:
+      hibernate:
+        ddl-auto: validate
+      show-sql: true
